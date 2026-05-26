@@ -1,0 +1,314 @@
+export default function AgroSustentavelSite() {
+  return (
+    <div className="bg-green-50 text-gray-800 font-sans">
+      {/* Navbar */}
+      <header className="fixed top-0 left-0 w-full z-50 bg-green-900/95 backdrop-blur-md shadow-lg">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-5">
+          <h1 className="text-3xl font-extrabold text-white tracking-wide">
+            Agro Forte
+          </h1>
+
+          <nav className="hidden md:flex gap-8 text-lg text-white font-medium">
+            <a href="#inicio" className="hover:text-green-300 transition">Início</a>
+            <a href="#sobre" className="hover:text-green-300 transition">Sobre</a>
+            <a href="#dados" className="hover:text-green-300 transition">Dados</a>
+            <a href="#galeria" className="hover:text-green-300 transition">Galeria</a>
+            <a href="#projetos" className="hover:text-green-300 transition">Projetos</a>
+            <a href="#contato" className="hover:text-green-300 transition">Contato</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section
+        id="inicio"
+        className="relative h-screen flex items-center justify-center text-center bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1800&auto=format&fit=crop')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        <div className="relative z-10 max-w-5xl px-6 text-white">
+          <p className="uppercase tracking-[8px] text-green-300 mb-5 text-sm md:text-base">
+            Sustentabilidade • Tecnologia • Produção
+          </p>
+
+          <h2 className="text-5xl md:text-7xl font-black leading-tight mb-8">
+            Agro Forte,
+            <br />
+            Futuro Sustentável
+          </h2>
+
+          <p className="text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mb-10">
+            O equilíbrio perfeito entre o crescimento do agronegócio,
+            a preservação ambiental e a inovação tecnológica.
+          </p>
+
+          <div className="flex flex-col md:flex-row gap-5 justify-center">
+            <button className="bg-green-600 hover:bg-green-500 px-10 py-4 rounded-2xl text-lg font-bold shadow-2xl transition">
+              Conheça o Projeto
+            </button>
+
+            <button className="border border-white hover:bg-white hover:text-green-900 px-10 py-4 rounded-2xl text-lg font-bold transition">
+              Ver Sustentabilidade
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Sobre */}
+      <section id="sobre" className="py-28 px-6 bg-white">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <p className="text-green-700 font-bold uppercase tracking-widest mb-4">
+              Sobre o Agro Forte
+            </p>
+
+            <h3 className="text-5xl font-black text-green-900 leading-tight mb-8">
+              Produzir Hoje Pensando no Amanhã
+            </h3>
+
+            <p className="text-lg leading-relaxed mb-6">
+              O agronegócio é um dos pilares da economia brasileira.
+              Porém, o crescimento sustentável depende de ações conscientes,
+              uso inteligente da tecnologia e preservação dos recursos naturais.
+            </p>
+
+            <p className="text-lg leading-relaxed mb-8">
+              Nosso objetivo é apresentar soluções modernas que unem
+              produtividade agrícola, responsabilidade ambiental e qualidade de vida.
+            </p>
+
+            <div className="grid grid-cols-2 gap-6">
+              <div className="bg-green-100 rounded-3xl p-6">
+                <h4 className="text-4xl font-black text-green-800">+70%</h4>
+                <p className="mt-2 text-lg">Eficiência na produção sustentável</p>
+              </div>
+
+              <div className="bg-green-100 rounded-3xl p-6">
+                <h4 className="text-4xl font-black text-green-800">100%</h4>
+                <p className="mt-2 text-lg">Compromisso com o meio ambiente</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-5">
+            <img
+              src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1000&auto=format&fit=crop"
+              className="rounded-3xl shadow-2xl h-72 object-cover w-full"
+              alt="Campo sustentável"
+            />
+
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1000&auto=format&fit=crop"
+              className="rounded-3xl shadow-2xl h-72 object-cover w-full mt-12"
+              alt="Natureza"
+            />
+
+            <img
+              src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1000&auto=format&fit=crop"
+              className="rounded-3xl shadow-2xl h-72 object-cover w-full"
+              alt="Plantação"
+            />
+
+            <img
+              src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?q=80&w=1000&auto=format&fit=crop"
+              className="rounded-3xl shadow-2xl h-72 object-cover w-full mt-12"
+              alt="Agricultura"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Dados */}
+      <section id="dados" className="py-24 bg-green-900 text-white px-6">
+        <div className="max-w-7xl mx-auto text-center">
+          <h3 className="text-5xl font-black mb-16">
+            Impacto Sustentável
+          </h3>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="bg-white/10 rounded-3xl p-10 backdrop-blur-sm">
+              <h4 className="text-6xl font-black text-green-300">85%</h4>
+              <p className="mt-4 text-xl">Redução de desperdício</p>
+            </div>
+
+            <div className="bg-white/10 rounded-3xl p-10 backdrop-blur-sm">
+              <h4 className="text-6xl font-black text-green-300">40%</h4>
+              <p className="mt-4 text-xl">Economia de água</p>
+            </div>
+
+            <div className="bg-white/10 rounded-3xl p-10 backdrop-blur-sm">
+              <h4 className="text-6xl font-black text-green-300">+500</h4>
+              <p className="mt-4 text-xl">Produtores apoiados</p>
+            </div>
+
+            <div className="bg-white/10 rounded-3xl p-10 backdrop-blur-sm">
+              <h4 className="text-6xl font-black text-green-300">2030</h4>
+              <p className="mt-4 text-xl">Meta de neutralidade ambiental</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cards */}
+      <section id="projetos" className="py-28 px-6 bg-green-100">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <p className="uppercase tracking-widest text-green-700 font-bold mb-4">
+              Projetos Sustentáveis
+            </p>
+
+            <h3 className="text-5xl font-black text-green-900">
+              Inovação no Campo
+            </h3>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-10">
+            <div className="bg-white rounded-[30px] overflow-hidden shadow-2xl hover:-translate-y-3 transition duration-300">
+              <img
+                src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?q=80&w=1200&auto=format&fit=crop"
+                className="h-64 w-full object-cover"
+                alt="Tecnologia agrícola"
+              />
+
+              <div className="p-8">
+                <h4 className="text-3xl font-bold text-green-800 mb-4">
+                  Agricultura Inteligente
+                </h4>
+
+                <p className="text-lg leading-relaxed">
+                  Sensores e monitoramento digital ajudam produtores a reduzir impactos ambientais.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-[30px] overflow-hidden shadow-2xl hover:-translate-y-3 transition duration-300">
+              <img
+                src="https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1200&auto=format&fit=crop"
+                className="h-64 w-full object-cover"
+                alt="Natureza preservada"
+              />
+
+              <div className="p-8">
+                <h4 className="text-3xl font-bold text-green-800 mb-4">
+                  Preservação Ambiental
+                </h4>
+
+                <p className="text-lg leading-relaxed">
+                  Recuperação de áreas verdes e proteção da biodiversidade regional.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-[30px] overflow-hidden shadow-2xl hover:-translate-y-3 transition duration-300">
+              <img
+                src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop"
+                className="h-64 w-full object-cover"
+                alt="Energia limpa"
+              />
+
+              <div className="p-8">
+                <h4 className="text-3xl font-bold text-green-800 mb-4">
+                  Energia Renovável
+                </h4>
+
+                <p className="text-lg leading-relaxed">
+                  Uso de energia solar e fontes limpas para abastecer propriedades rurais.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Galeria */}
+      <section id="galeria" className="py-28 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h3 className="text-5xl font-black text-green-900 mb-5">
+              Galeria do Agro
+            </h3>
+
+            <p className="text-xl text-gray-600">
+              Imagens que representam o equilíbrio entre tecnologia e natureza.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=1000&auto=format&fit=crop" className="rounded-3xl h-72 object-cover w-full" />
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1000&auto=format&fit=crop" className="rounded-3xl h-72 object-cover w-full" />
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1000&auto=format&fit=crop" className="rounded-3xl h-72 object-cover w-full" />
+            <img src="https://images.unsplash.com/photo-1492496913980-501348b61469?q=80&w=1000&auto=format&fit=crop" className="rounded-3xl h-72 object-cover w-full" />
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-28 bg-gradient-to-r from-green-800 to-green-600 text-white text-center px-6">
+        <h3 className="text-5xl md:text-6xl font-black leading-tight mb-8">
+          O Futuro do Campo
+          <br />
+          Começa Agora
+        </h3>
+
+        <p className="max-w-4xl mx-auto text-xl leading-relaxed mb-10">
+          Sustentabilidade, inovação e consciência ambiental são os caminhos para transformar o agronegócio brasileiro.
+        </p>
+
+        <button className="bg-white text-green-800 hover:scale-105 transition px-12 py-5 rounded-2xl text-xl font-black shadow-2xl">
+          Participar do Movimento
+        </button>
+      </section>
+
+      {/* Footer */}
+      <footer id="contato" className="bg-gray-950 text-gray-300 py-16 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+          <div>
+            <h4 className="text-3xl font-black text-white mb-5">
+              Agro Forte
+            </h4>
+
+            <p className="leading-relaxed text-lg">
+              Construindo um futuro sustentável através da agricultura consciente.
+            </p>
+          </div>
+
+          <div>
+            <h5 className="text-xl font-bold text-white mb-5">Links</h5>
+            <ul className="space-y-3 text-lg">
+              <li>Início</li>
+              <li>Projetos</li>
+              <li>Sustentabilidade</li>
+              <li>Contato</li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 className="text-xl font-bold text-white mb-5">Contato</h5>
+            <ul className="space-y-3 text-lg">
+              <li>contato@agroforte.com</li>
+              <li>(41) 99999-9999</li>
+              <li>Curitiba - PR</li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 className="text-xl font-bold text-white mb-5">Redes</h5>
+            <div className="flex gap-4 text-3xl">
+              <span>📷</span>
+              <span>🌎</span>
+              <span>▶️</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+          © 2026 Agro Forte — Todos os direitos reservados.
+        </div>
+      </footer>
+    </div>
+  );
+}
